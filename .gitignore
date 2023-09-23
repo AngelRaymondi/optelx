@@ -1,0 +1,7 @@
+/src/
+/node_modules/
+/.env
+/environment.d.ts
+/tsconfig.json
+/dist/screenshots/s
+/update-repo.ts

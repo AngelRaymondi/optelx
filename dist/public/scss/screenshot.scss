@@ -1,0 +1,14 @@
+@use 'main.scss';
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+}
+
+img {
+  position: absolute;
+  width: 100%;
+}

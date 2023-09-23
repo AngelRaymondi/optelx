@@ -1,0 +1,25 @@
+doctype html
+html(lang="es")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet" href="/css/index.css")
+    script(src="/js/optelx.js" defer type="module") 
+    script.
+      function resizeIframe(obj) {
+        obj.style.height = (obj.contentWindow.document.documentElement.scrollHeight) * 2.5 + 'px';
+        obj.style.width = (obj.contentWindow.document.documentElement.scrollWidth) * 2 + 'px';
+      }
+    title OptelX
+  body 
+    .cmd
+    form.optelx(action="/" method="get")
+      input#dir(name="dir" type="text" placeholder="Directorio" required)
+      input(name="data" type="text")
+      input(type="submit" value="Enviar")
+    .response
+
+    iframe.screenshot(src="/screenshot" onload="resizeIframe(this)")
+
+    script.
+      document.querySelector('#dir').value = "#{desktop.replaceAll('\\', '\\\\')}"

